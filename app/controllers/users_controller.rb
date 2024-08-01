@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @this_week_book = @books.created_this_week
     @last_week_book =@books.created_last_week
     
+    
     @currentUesrEntry = Entry.where(user_id: current_user.id)
     @userEntry = Entry.where(user_id: @user.id)
     unless @user.id == current_user.id
