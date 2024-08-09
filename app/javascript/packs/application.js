@@ -16,3 +16,5 @@ import "../stylesheets/application"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+// ↓５段階評価の
+window.$ = window.jQuery = require('jquery');
